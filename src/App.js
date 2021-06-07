@@ -11,33 +11,46 @@ import Resources from "./components/Resources";
 import Services from "./components/Services";
 
 function App() {
+
+  const scrollWithOffset = (el) => {
+    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+    const yOffset = -110; 
+    window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' }); 
+}
+
   return (
     <div className="App">
      <Main>
        <Switch>
          <Route exact path="/">
-          <Home />
+          <Home scrollWithOffset={scrollWithOffset}/>
          </Route>
          <Route  path="/aidkit">
-           <Aidkit  />
+           <Aidkit 
+           scrollWithOffset={scrollWithOffset} />
          </Route>
          <Route path="/contact">
-           <Contact />
+           <Contact 
+           scrollWithOffset={scrollWithOffset}/>
          </Route>
          <Route path="/deeptrust">
-           <DeepTrust />
+           <DeepTrust 
+           scrollWithOffset={scrollWithOffset}/>
          </Route>
-         <Route path="DINstandards">
+         <Route path="/DINstandards">
            <DINStandards />
          </Route>
          <Route path="/resources">
-           <Resources />
+           <Resources 
+           scrollWithOffset={scrollWithOffset}/>
          </Route>
          <Route path="/services">
-           <Services />
+           <Services 
+           scrollWithOffset={scrollWithOffset}/>
          </Route>
          <Route path="/construction">
-           <Construction />
+           <Construction 
+           scrollWithOffset={scrollWithOffset}/>
          </Route>
        </Switch>
        <Footer/>
