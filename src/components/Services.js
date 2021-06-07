@@ -2,11 +2,11 @@ import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import Logo from "../images/neurocat_website_logo.png";
 import { Navbar, Nav, Container } from "react-bootstrap";
+import {NavHashLink} from "react-router-hash-link";
 
-const Services = () => {
+const Services = ({scrollWithOffset}) => {
   return (
     <div>
-      <h1>Services</h1>
       <Navbar expand="md" bg="light" fixed="top" className="navbar py-3 " variant="light">
         <Container>
           <NavLink className="navbar-brand"  to="/">
@@ -16,31 +16,32 @@ const Services = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto">          
                 <Nav.Link >
-                  <NavLink to="/" className="link">Home</NavLink>
+                  <NavHashLink to="/services/#offerings" className="link" scroll={el => scrollWithOffset(el)}>Offerings</NavHashLink>
                 </Nav.Link>
                 <Nav.Link>
-                  <NavLink  to="/construction" className="link">Products</NavLink>
+                  <NavHashLink  to="/services/#service-projects" scroll={el => scrollWithOffset(el)}className="link">Service Projects</NavHashLink>
                 </Nav.Link>
                 <Nav.Link >
-                  <NavLink to="resources" className="link">Resources</NavLink>
-                </Nav.Link>
-                <Nav.Link>
-                  <NavLink  to="/construction" className="link">Team</NavLink>
-                </Nav.Link>
-                <Nav.Link>
-                  <NavLink  to="/construction" className="link">Careers</NavLink>
-                </Nav.Link>
-                <Nav.Link>
-                  <NavLink to="/contact" className="link">Contact</NavLink>
+                  <NavHashLink to="/services/non-profit" scroll={el => scrollWithOffset(el)}className="link">Non-profit Projects</NavHashLink>
                 </Nav.Link>
             </Nav>
           </Navbar.Collapse>
           </Container>
       </Navbar>
       <div className="main-container">
-        <section id="services-header">
+        <section id="offerings">
           <div className="info container">
-          <h1 className="display-1">you are in the services-header section</h1>
+          <h1 className="display-1">you are in the offerings section</h1>
+          </div>
+        </section>
+        <section id="service-projects">
+          <div className="info container">
+          <h1 className="display-1">you are in the service-projects section</h1>
+          </div>
+        </section>
+        <section id="non-profit">
+          <div className="info container">
+          <h1 className="display-1">you are in the non-profit section</h1>
           </div>
         </section>
       </div>

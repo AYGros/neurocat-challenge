@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import Logo from "../images/neurocat_website_logo.png";
 import { Navbar, Nav, Container } from "react-bootstrap";
+import {NavHashLink} from "react-router-hash-link"
 
 const DeepTrust = () => {
   return (
@@ -16,22 +17,16 @@ const DeepTrust = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto">          
                 <Nav.Link >
-                  <NavLink to="/" className="link">Home</NavLink>
+                  <NavLink to="/construction" className="link">Login</NavLink>
                 </Nav.Link>
                 <Nav.Link>
-                  <NavLink  to="/construction" className="link">Products</NavLink>
-                </Nav.Link>
-                <Nav.Link >
-                  <NavLink to="resources" className="link">Resources</NavLink>
+                  <NavLink  to="/construction" className="link">Sign Up</NavLink>
                 </Nav.Link>
                 <Nav.Link>
-                  <NavLink  to="/construction" className="link">Team</NavLink>
+                  <NavHashLink  to="/aidkit/#faqs" className="link">FAQs</NavHashLink>
                 </Nav.Link>
                 <Nav.Link>
-                  <NavLink  to="/construction" className="link">Careers</NavLink>
-                </Nav.Link>
-                <Nav.Link>
-                  <NavLink to="/contact" className="link">Contact</NavLink>
+                  <NavLink  to="/contact" className="link">Contact</NavLink>
                 </Nav.Link>
             </Nav>
           </Navbar.Collapse>
