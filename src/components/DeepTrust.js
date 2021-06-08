@@ -38,7 +38,7 @@ const DeepTrust = () => {
           <Row className="justify-content-center">
             <h1 className="display-5">Why DeepTrust?</h1>
           </Row>
-          <Row className="justify-content-aroundr">
+          <Row className="justify-content-around">
             <Col sm={6} md={3}>
               <Row className="justify-content-center">
               <span><i class="fas fa-certificate "></i></span>

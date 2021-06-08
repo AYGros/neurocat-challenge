@@ -1,0 +1,47 @@
+#DIN-overview {
+  background: url(https://www.neurocat.ai/wp-content/uploads/2018/11/neurocat_website_header_bg_video_2.jpg);
+  padding-bottom: 1rem;
+  box-shadow: 2px 2px 4px;
+
+  h1, p {
+    color: rgb(246, 251, 252);
+    padding-top: 1rem;
+      }
+
+}
+
+h4 {
+  color: theme-color("primary");
+}
+
+.DIN-image {
+  box-shadow: 2px 2px 6px lightgrey;
+  width: auto;
+  
+}
+
+#what-next {
+  background: url(https://images.unsplash.com/photo-1620659000376-f26bba13ac9f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 3rem;
+  box-shadow: 2px 2px 4px;
+  padding-top:3rem;
+  h1, p {
+    color: rgb(246, 251, 252);
+  }
+  
+}
+
+#DIN-partners {
+  h1 {
+
+    color: theme-color("primary");
+    text-shadow: 1px 1px 2px lightgrey; 
+    margin-top: 1rem;
+  }
+
+  .partner-card {
+    box-shadow: 2px 2px 4px lightgrey;
+  }
+}
