@@ -45,43 +45,47 @@ const Home = ({scrollWithOffset}) => {
       </Navbar>
       <div className="main-container">
         <section id="who">
-          <div className="info container">
-          <h1 className="display-1">you are in the who section</h1>
+          <div className="who-container container text-center">
+          <h1 className="display-6">Who/What is neurocat?</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam facere impedit voluptate maiores aspernatur placeat nesciunt facilis minima delectus molestias odit natus numquam quisquam dolorem perferendis blanditiis tenetur assumenda beatae, obcaecati incidunt provident ea iure a. Tempora nihil, culpa explicabo, ipsam, deleniti totam distinctio consequatur nobis possimus iure eius ea?</p>
           </div>
         </section>
         <section id="statements">
-          <div className="info container">
+          <div className="statements-container">
           <h1 className="display-1">you are in the statements section</h1>
           </div>
         </section>
         <section id="products">
-          <div className="info container">
+          <div className="products-container">
           <h1 className="display-1">you are in the products section</h1>
           </div>
         </section>
         <section id="infografik">
-          <div className="info container">
+          <div className="grafik-container">
           <h1 className="display-1">you are in the infografik section</h1>
           </div>
         </section>
         <section id="projects">
-          <div className="info container">
+          <div className="projects-container">
           <h1 className="display-1">you are in the statements section</h1>
           </div>
         </section>
         <section id="DINstandards">
-          <div className="info container">
+          <div className="DIN-container">
           <h1 className="display-1">you are in the DINstandards section</h1>
           </div>
         </section>
         <section id="customer-voice">
-          <div className="info container">
+          <div className="voices-container">
           <h1 className="display-1">you are in the customer voice section</h1>
           </div>
         </section>
         <section id="team">
-          <div className="info container">
-          <h1 className="display-1">you are in the team section</h1>
+          <div className="team-container container text-center">
+          <div className="row justify-content-center py-2">
+            <h1 className="display-5">Our Team</h1>
+            </div>
+          <img src="https://www.neurocat.ai/wp-content/uploads/2018/05/our-team.jpg" alt="team picture" />
           </div>
         </section>
       </div>
