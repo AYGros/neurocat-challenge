@@ -21,8 +21,98 @@ button {
     padding-top: 1rem;
     
   }
-  .team-container {
-   
-  }
   
+  
+}
+
+#statements {
+  h4 {
+    color: theme-color("primary");
+    text-shadow: 1px 1px 2px lightgrey; 
+    
+  } 
+  .statementImage {
+height: 250px;
+width: 100%;
+object-fit: cover;
+max-height: 100vh;
+  }
+
+  blockquote {
+    color: theme-color("primary")
+  }
+}
+
+#products {
+  .container {
+    background: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px lightgrey;
+  }
+  h4 {
+    color: theme-color("primary");
+    text-shadow: 1px 1px 2px lightgrey; 
+    margin-top: 1rem;
+  }
+
+  .product-image {
+    height: 150px;
+    width:auto;
+  }
+}
+
+#infografik {
+  background: url(https://image.shutterstock.com/image-illustration/quantum-computer-technology-banner-design-600w-1824769985.jpg);
+  padding-bottom: 1rem;
+  box-shadow: 2px 2px 4px lightgrey;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  h1,p {
+    color: rgb(246, 251, 252);
+  }
+
+}
+
+#projects {
+  .projects-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 2px 2px 4px lightgrey;
+  }
+  h4 {
+    color: theme-color("primary");
+    text-shadow: 1px 1px 2px lightgrey; 
+    padding-bottom: 1rem;
+  }
+}
+
+#DINstandards {
+  .DIN-image {
+    
+    height: auto;
+    object-fit: cover;
+    box-shadow: 2px 2px 4px lightgrey;
+  }
+
+  h4 {
+    color: theme-color("primary");
+    text-shadow: 1px 1px 2px lightgrey; 
+    padding-bottom: 1rem;
+  }
+}
+
+#customer-voice {
+  background: url(https://image.shutterstock.com/image-illustration/quantum-computer-technology-concept-deep-600w-1260946315.jpg);
+  box-shadow: 2px 2px 4px lightgrey;
+  background-repeat: no-repeat;
+  background-size: cover;
+.voices-container {
+  background-color: rgba(246, 251, 252, 0.6) ;
+  border-radius: 5px;
+}
+h4 {
+  color: theme-color("primary");
+}
 }
