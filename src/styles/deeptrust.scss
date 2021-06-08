@@ -1,0 +1,65 @@
+#deeptrust-header {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  h1, p {
+    color:rgb(246, 251, 252);
+  }
+  background: url(https://www.neurocat.ai/wp-content/uploads/2018/11/neurocat_website_header_bg_video_2.jpg);
+  padding-bottom: 1rem;
+  box-shadow: 2px 2px 4px lightgrey;
+span {
+  font-size: 4rem;
+  color:rgb(246, 251, 252);
+}
+}
+
+#deeptrust-product {
+  .display-5 {
+    color: theme-color("primary");
+    text-shadow: 1px 1px 2px lightgrey; 
+    margin-top: 1rem;
+  } 
+  .deeptrust-banner {
+    background: url(https://www.neurocat.ai/wp-content/uploads/2018/11/side-by-side-2.png);
+    box-shadow: 2px 2px 4px lightgrey;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .product-container {
+    background: rgba(246, 251, 252, 0.6);
+    border-radius: 5px;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    }
+}
+
+#deeptrust-partners {
+padding-bottom: 6rem;
+
+  .stretched-link::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: auto;
+    content: "";
+    background-color: rgba(0,0,0,0);
+
+}
+
+h1 {
+  color: theme-color("primary");
+text-shadow: 1px 1px 2px lightgrey; 
+margin-top: 1rem;
+}
+
+.partner-card {
+  box-shadow: 2px 2px 6px lightgrey;
+}
+}
