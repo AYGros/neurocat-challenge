@@ -2,10 +2,12 @@
 @import "footer.scss";
 @import "home.scss";
 @import "deeptrust.scss";
+@import "DINstandards.scss";
+@import "services.scss";
 
 $theme-colors : (
   "primary": rgb(0, 88, 88),
-  "secondary": rgb(134, 226, 226),
+  "secondary": rgb(121, 204, 204),
   "danger": tomato,
   "success": #52c96e,
   "info": rgb(2, 190, 143),

@@ -193,7 +193,7 @@ const Home = ({scrollWithOffset}) => {
         </section>
         <section id="DINstandards">
           <div className="DIN-container container text-right py-4">
-          <Row >
+          <Row className="flex-wrap-reverse" >
             <Col md={10}>
              <h4>neurocat's work with <Link to="/DINstandards">DIN Standard</Link></h4>
              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ducimus iusto reprehenderit fugiat ullam voluptatibus! Ut sint odit recusandae molestiae?</p>
