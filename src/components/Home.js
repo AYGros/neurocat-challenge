@@ -44,12 +44,14 @@ const Home = ({scrollWithOffset}) => {
           </Container>
       </Navbar>
       <div className="main-container">
+        {/* -----------------info section---------------------------------- */}
         <section id="who">
           <div className="who-container container text-center">
           <h1 className="display-4">Who/What is neurocat?</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam facere impedit voluptate maiores aspernatur placeat nesciunt facilis minima delectus molestias odit natus numquam quisquam dolorem perferendis blanditiis tenetur assumenda beatae, obcaecati incidunt provident ea iure a. Tempora nihil, culpa explicabo, ipsam, deleniti totam distinctio consequatur nobis possimus iure eius ea?</p>
           </div>
         </section>
+        {/* -------------------------statements section-------------------------- */}
         <section id="statements">
           <div className="statements-container container py-4 text-left">
           <Row className="justify-content-around">
@@ -84,6 +86,7 @@ const Home = ({scrollWithOffset}) => {
           </Row>
           </div>
         </section>
+        {/*  ------------------------products section----------------------------- */}
         <section id="products">
           <div className="products-container container my-4">
             <Row className="justify-content-between text-center">
@@ -117,6 +120,7 @@ const Home = ({scrollWithOffset}) => {
             </Row>
           </div>
         </section>
+        {/* --------------------infografik section----------------------------- */}
         <section id="infografik">
           <div className="grafik-container container text-center justify-content around">
           <h1 className="display-4 py-3">Why does AI matter?</h1>
@@ -173,6 +177,7 @@ const Home = ({scrollWithOffset}) => {
           </Row>
           </div>
         </section>
+        {/*  ------------------------------projects section----------------------------- */}
         <section id="projects">
           <div className="projects-container container text-left py-4">
           <Row >
@@ -200,6 +205,7 @@ const Home = ({scrollWithOffset}) => {
           </Row>
           </div>
         </section>
+        {/* --------------------customer voice section----------------------------- */}
         <section id="customer-voice" className="py-4">
           <div className="voices-container container text-center py-4">
             <h4 className="display-5">This is what our costumers say</h4>
@@ -211,6 +217,7 @@ const Home = ({scrollWithOffset}) => {
                   </blockquote>
           </div>
         </section>
+        {/* -------------------------team section------------------------------------- */}
         <section id="team">
           <div className="team-container container text-center">
           <div className="row justify-content-center py-2">
