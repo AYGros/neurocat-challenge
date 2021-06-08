@@ -44,7 +44,7 @@ const Construction = () => {
           <div className="info container">
           <h1 className="display-1">Sorry, this page is currently under construction</h1>
           </div>
-          <button className="btn btn-primary">Test the Sass</button>
+          <button className="btn btn-danger">Test the Sass</button>
         </section>
       </div>
     </div>

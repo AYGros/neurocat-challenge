@@ -15,8 +15,11 @@
 .main-container{
   min-height: 100vh;
   padding-top: 150px;
+
 }
 
 .navbar {
   opacity: 0.8;
+  box-shadow: 2px 2px 5px $gray-300;
 }
+

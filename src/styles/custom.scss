@@ -1,7 +1,25 @@
+@import "contact.scss";
+@import "footer.scss";
+@import "home.scss";
 
 $theme-colors : (
-  "primary": teal,
-  "danger": tomato
+  "primary": rgb(0, 88, 88),
+  "secondary": rgb(134, 226, 226),
+  "danger": tomato,
+  "success": #52c96e,
+  "info": rgb(2, 248, 187),
 );
 
-@import "bootstrap/scss/bootstrap";
+@import "~bootstrap/scss/bootstrap";
+
+@function theme-color($key: "primary") {
+  @return map-get($theme-colors, $key);
+}
+
+
+
+
+.contact-card {
+  background-color: rgba(246, 251, 252, 0.6);
+  color: theme-color("primary");
+}
