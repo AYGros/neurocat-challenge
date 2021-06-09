@@ -15,3 +15,119 @@
     text-align: center;
   }
 }
+
+#offerings {
+  padding-bottom: 3rem;
+  padding-top: 2rem;
+  color: white;
+  background: url(https://www.neurocat.ai/wp-content/themes/neurocat/img/bl-pattern.jpg);
+  box-shadow: 3px 3px 6px lightgrey;
+
+  .labsinfo-icon {
+    background-color: rgb(246, 251, 252);
+    padding: 1rem;
+    border-radius: 10px;
+    width: 4rem;
+    height: 4rem;
+    box-shadow:0 0 1rem 0.1rem white;
+  }
+  .labsinfo-caption {
+    color: white;
+  }
+  .wordcat {
+    border-radius: 10px;
+    opacity: 0.6;
+    box-shadow: 0 0 1rem 0.2rem white;
+  }
+
+  .fas {
+    padding-bottom: 2rem;
+    color: white
+  }
+}
+
+#service-projects {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  h1  {
+    color:theme-color("primary");
+    text-shadow: 1px 1px 2px lightgrey; 
+    padding-bottom: 2rem;
+  }
+
+
+}
+
+.service-projects-container {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow:  0 0 1rem 0.2rem lightgrey;
+}
+
+.far {
+  font-size: 3rem;
+  padding: 1rem;
+  width: 3rem;
+  height: auto;
+  color: theme-color("secondary")
+}
+
+
+.past-service-item {
+  display: flex;
+   align-items: flex-center;
+   text-align: left;
+   padding-right: 2rem;
+   padding-left:2rem;
+
+   p {
+    color: gray;
+    padding-left: 2rem;
+  }
+}
+
+#non-profit {
+  padding-top: 2rem;
+  padding-bottom: 10rem;
+  h1  {
+    color:theme-color("primary");
+    text-shadow: 1px 1px 2px lightgrey; 
+    padding-bottom: 2rem;
+  }
+
+.non-profit-container {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow:  0 0 1rem 0.2rem lightgrey;
+}
+
+.cat-icon {
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 10px;
+    width: 3rem;
+    height: auto;
+    box-shadow:0 0 1rem 0.1rem #ffffff;
+}
+
+ .non-profit-item {
+   display: flex;
+   align-items: flex-center;
+   text-align: left;
+   padding-right: 2rem;
+
+
+   p {
+    color: gray;
+    padding-left: 1rem;
+  }
+ }
+}
