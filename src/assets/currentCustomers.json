@@ -1,0 +1,25 @@
+{
+  "customers":[
+    {
+      "name":"customer 1",
+      "icon":"https://www.neurocat.ai/wp-content/uploads/2018/11/cat.png",
+      "location": "location 1",
+      "quote": "Customer 1 approves of neurocat aidkit",
+      "id": "1"
+    },
+    {
+      "name":"customer 2",
+      "icon":"https://www.neurocat.ai/wp-content/uploads/2018/11/cat.png",
+      "location": "location 2",
+      "quote": "Customer 2 recommends neurocat aidkit",
+      "id": "2"
+    },
+    {
+      "name":"customer 3",
+      "icon":"https://www.neurocat.ai/wp-content/uploads/2018/11/cat.png",
+      "location": "location 3",
+      "quote": "Customer 3 approves of neurocat aidkit",
+      "id": "2"
+    }
+  ]
+}
