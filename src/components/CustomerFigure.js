@@ -4,7 +4,7 @@ import { Figure } from "react-bootstrap";
 const CustomerFigure = (customer) => {
   return (
     <div>
-      <Figure>
+      <Figure className="position-relative customer-figure">
         <Figure.Image
           width={75}
           height={180}
@@ -14,6 +14,7 @@ const CustomerFigure = (customer) => {
         <Figure.Caption>
          {customer.customer.name}
         </Figure.Caption>
+        <a href={customer.customer.webpage} class="stretched-link"></a>
       </Figure>
     </div>
   )
