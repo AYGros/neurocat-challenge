@@ -22,7 +22,7 @@ const Services = ({scrollWithOffset}) => {
                   <NavHashLink  to="/services/#service-projects" scroll={el => scrollWithOffset(el)}className="link">Service Projects</NavHashLink>
                 </Nav.Link>
                 <Nav.Link >
-                  <NavHashLink to="/services/non-profit" scroll={el => scrollWithOffset(el)}className="link">Non-profit Projects</NavHashLink>
+                  <NavHashLink to="/services/#non-profit" scroll={el => scrollWithOffset(el)}className="link">Non-profit Projects</NavHashLink>
                 </Nav.Link>
             </Nav>
           </Navbar.Collapse>

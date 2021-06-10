@@ -1,0 +1,126 @@
+
+#aidkit-about {
+  h6 {
+    color: theme-color("secondary");
+    
+  }
+
+  p{
+    color: gray;
+  }
+}
+
+#approach {
+  padding-top:3rem;
+  padding-bottom: 3rem;
+
+}
+
+.aidkit-image {
+  background-color: white;
+  padding: 1rem;
+  box-shadow: 0 0 1rem 0.2rem lightgrey;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+#features {
+padding-top: 3rem;
+padding-bottom: 3rem;
+  .features-container {
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 0 1rem 0.2rem lightgrey;  
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    background-color: theme-color("secondary");
+  }
+  
+
+  .far, h4 {
+    color: white;
+  }
+  
+}
+
+#why-aidkit {
+  padding-bottom: 2rem;
+  background: linear-gradient(45deg, #2fa4d3, #1cccc4);
+  h1, p {
+    color: white;
+  }
+  .aidkit-logo {
+    background-color: rgb(246, 251, 252);
+    padding: 0.2rem;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: inset 0 0 0.2rem 0.1rem #26b7cc ;
+  }
+}
+
+#works-how {
+  padding: 3rem;
+
+  .works-how-container {
+    padding:3rem;
+    background-color: white;
+    box-shadow: 0 0 1rem 0.2rem lightgrey;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    h1 {
+      padding-bottom: 1rem;
+      color: theme-color("primary");
+      text-shadow: 1px 1px 2px lightgrey;   
+      }
+
+  }
+}
+
+#pricing {
+  h1 {
+    padding-bottom: 1rem;
+    color: theme-color("primary");
+    text-shadow: 1px 1px 2px lightgrey; 
+  }
+.price-button {
+  color: white;
+}
+  h4{
+    color: theme-color("info");
+
+  }
+
+}
+
+#faqs {
+  padding-bottom: 10rem;
+  padding-top: 2rem;
+
+.faq-container {
+  background-color: white;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 0 1rem 0.2rem lightgrey;
+  h1 {
+    padding-bottom: 1rem;
+    color: theme-color("primary");
+    text-shadow: 1px 1px 2px lightgrey; 
+  }
+  .accordion  {
+    h4 {
+      color: white;
+    }
+    p {
+      color:gray;
+    }
+
+    .toggle {
+      background: linear-gradient(45deg, #2fa4d3, #1cccc4);
+      border-color: theme-color("primary");
+    }
+        
+  }
+}
+
+}
