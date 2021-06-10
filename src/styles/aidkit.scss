@@ -11,9 +11,7 @@
 }
 
 #approach {
-  padding-top:3rem;
-  padding-bottom: 3rem;
-
+  padding:3rem;
 }
 
 .aidkit-image {
@@ -25,8 +23,8 @@
 }
 
 #features {
-padding-top: 3rem;
-padding-bottom: 3rem;
+padding: 3rem;
+
   .features-container {
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -77,7 +75,29 @@ padding-bottom: 3rem;
   }
 }
 
+#current-customers {
+  padding: 1rem 2rem 2rem 2rem;
+  background-color: theme-color("secondary");
+  
+  h1 {
+    color: white;
+    padding-bottom: 1rem;
+  }
+
+  .customer-figure {
+    background-color:  rgb(246, 251, 252);
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 1rem;
+    box-shadow: 0 0 1rem 0.2rem lightgrey;
+  }
+
+
+}
+
 #pricing {
+  padding: 3rem;
+
   h1 {
     padding-bottom: 1rem;
     color: theme-color("primary");
