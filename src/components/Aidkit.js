@@ -8,7 +8,7 @@ import { Navbar, Nav, Container, Row, Col, Image, Card, Accordion, Button, ListG
 import {NavHashLink} from "react-router-hash-link";
 import currentCustomers from "../assets/currentCustomers.json";
 import CustomerFigure from "./CustomerFigure";
-
+import VideoEmbed from "./VideoEmbed";
 
 const Aidkit = ({scrollWithOffset}) => {
   return (
@@ -25,7 +25,7 @@ const Aidkit = ({scrollWithOffset}) => {
                   <NavHashLink to="/aidkit/#aidkit-about" className="link" scroll={el => scrollWithOffset(el)}>What is aidkit?</NavHashLink>
                 </Nav.Link>
                 <Nav.Link>
-                  <NavHashLink  to="/aidkit/#approach" scroll={el => scrollWithOffset(el)}className="link">Approach</NavHashLink>
+                  <NavHashLink  to="/aidkit/#video" scroll={el => scrollWithOffset(el)}className="link">Approach</NavHashLink>
                 </Nav.Link>
                 <Nav.Link >
                   <NavHashLink to="/aidkit/#pricing" scroll={el => scrollWithOffset(el)}className="link">Pricing</NavHashLink>
@@ -56,9 +56,10 @@ const Aidkit = ({scrollWithOffset}) => {
           </div>
         </section>
         {/* -------------------approach/video section------------------------------ */}
-        <section id="approach">
-          <div className="approach-container container">
-          <h1 className="display-1">you are in the waht is approach section</h1>
+        <section id="video">
+          <div className="video-container container text-center">
+          <h4>Watch the video of our TechAcademy talk</h4>
+            <VideoEmbed embedId="yieJPzkshww"/>
           </div>
         </section>
         {/* -----------------testbed and monitor section----------------- */}

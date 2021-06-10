@@ -10,8 +10,32 @@
   }
 }
 
-#approach {
+#video {
   padding:3rem;
+  .video-container {
+    .academyVideo {
+      border-top-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      border: 4px solid theme-color("info")
+    }
+
+// start -------- as by bravemaster619
+    .video-responsive {
+      overflow: hidden;
+      padding-bottom: 56.25%;
+      position: relative;
+      height: 0;
+    }
+    
+    .video-responsive iframe {
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+    }
+      // end ---as by bravemaster619
+  }
 }
 
 .aidkit-image {
