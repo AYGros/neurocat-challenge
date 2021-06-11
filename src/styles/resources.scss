@@ -17,6 +17,24 @@
     }
   }
 .owl-stage-outer{
-  padding-left: 5rem;
+  padding-left: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
  
+}
+
+h1 {
+  padding-bottom: 1rem;
+      color: theme-color("primary");
+      text-shadow: 1px 1px 2px lightgrey; 
+}
+
+.use-cases-container, .publications-container, .cats-container, .news-container {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.section-divider {
+  height: 3px;
+  background: linear-gradient(to left,rgb(246, 251, 252), theme-color("info"), rgb(246, 251, 252));
 }
