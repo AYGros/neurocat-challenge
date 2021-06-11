@@ -1,0 +1,34 @@
+{
+  "cases": [
+    {
+      "id": "1",
+      "name": "Interview",
+      "image": "https://www.neurocat.ai/wp-content/uploads/2020/11/1e9-230x120.jpeg"
+    },
+    {
+      "id": "2",
+      "name": "NVDIA Inception",
+      "image": "https://www.neurocat.ai/wp-content/uploads/2020/11/inception-member-social-fb-in-2048x2048-1-230x120.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Cat Flap",
+      "image": "https://www.neurocat.ai/wp-content/uploads/2018/05/door2-225x300-2-225x120.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Techcode Pitch",
+      "image": "https://www.neurocat.ai/wp-content/uploads/2019/04/Techcode_Pitch_Won-230x120.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Interview Adlershof",
+      "image": "https://www.neurocat.ai/wp-content/uploads/2018/11/growth-230x120.png"
+    },
+    {
+      "id": "6",
+      "name": "Website launched",
+      "image": "https://www.neurocat.ai/wp-content/uploads/2018/06/deep2-1-230x120.jpeg"
+    }
+  ]
+}

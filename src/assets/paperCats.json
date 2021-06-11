@@ -1,0 +1,24 @@
+{
+  "cases": [
+    {
+      "id": "1",
+      "name": "Abyssinian",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Valentino.jpg/250px-Valentino.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Russian Blue",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Sergei%2C_Tail_Stripes.jpg/220px-Sergei%2C_Tail_Stripes.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Burmese",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Blissandlucky11.jpg/220px-Blissandlucky11.jpg"
+    },
+    {
+      "id": "4",
+      "name": "NeuroCat",
+      "image": "https://www.neurocat.ai/wp-content/uploads/2018/11/cat.png"
+    }
+  ]
+}

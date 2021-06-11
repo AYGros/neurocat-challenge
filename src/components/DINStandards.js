@@ -3,8 +3,11 @@ import { Link, NavLink } from 'react-router-dom';
 import Logo from "../images/neurocat_website_logo.png";
 import { Navbar, Nav, Container, Row, Col, Image, Card } from "react-bootstrap";
 import DownloadLink from './DownloadLink';
+import PartnerCard from './PartnerCard';
 
 const DINStandards = () => {
+  const dinPartnerImage="https://www.neurocat.ai/wp-content/uploads/2018/05/admin-ajax.jpg";
+
   return (
     <div>
       <Navbar expand="md" bg="light" fixed="top" className=" navbar py-3 " variant="light">
@@ -32,8 +35,7 @@ const DINStandards = () => {
           <div className="DIN-container container text-left py-4">
           <Row>
             <Col md={2} className="pb-3 pt-2">
-              
-              <Image className="DIN-image" rounded src="https://www.neurocat.ai/wp-content/uploads/2018/05/admin-ajax.jpg" ></Image>
+              <Image className="DIN-image" rounded src={dinPartnerImage} ></Image>
             </Col>
             <Col md={10}>
              <h4>Overview on DIN 92001-1</h4>
@@ -54,7 +56,7 @@ const DINStandards = () => {
             </Col>
             <Col md={2} className="pb-3">
               
-              <Image className="DIN-image" rounded src="https://www.neurocat.ai/wp-content/uploads/2018/05/admin-ajax.jpg" ></Image>
+              <Image className="DIN-image" rounded src={dinPartnerImage} ></Image>
             </Col>
           </Row>
           </div>
@@ -80,52 +82,16 @@ const DINStandards = () => {
           <div class="DIN-partners-container container">
           <Row className="justify-content-around">
             <Col md={6} lg={3} className="p-4 ">
-            <Card className="partner-card" style={{ width: 'auto' }}>
-              <Card.Img variant="top" src="https://www.neurocat.ai/wp-content/uploads/2018/05/admin-ajax.jpg" />
-              <Card.Body>
-                <Card.Title>Partner 1</Card.Title>
-                <Card.Text>
-                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, soluta.
-                </Card.Text>
-                <a href="#" class="stretched-link"></a>
-              </Card.Body>
-            </Card>
+              <PartnerCard partnertype="DIN" number="1" image={dinPartnerImage} />
             </Col>
             <Col md={6} lg={3} className="p-4">
-            <Card className="partner-card" style={{ width: 'auto' }}>
-              <Card.Img variant="top" src="https://www.neurocat.ai/wp-content/uploads/2018/05/admin-ajax.jpg" />
-              <Card.Body>
-                <Card.Title>Partner 2</Card.Title>
-                <Card.Text>
-                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, soluta.
-                </Card.Text>
-                <a href="#" class="stretched-link"></a>
-              </Card.Body>
-            </Card>
+            <PartnerCard partnertype="DIN" number="2" image={dinPartnerImage} />
             </Col>
             <Col md={6} lg={3} className="p-4">
-            <Card className="partner-card" style={{ width: 'auto' }}>
-              <Card.Img variant="top" src="https://www.neurocat.ai/wp-content/uploads/2018/05/admin-ajax.jpg" />
-              <Card.Body>
-                <Card.Title>Partner 3</Card.Title>
-                <Card.Text>
-                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, soluta.
-                </Card.Text>
-                <a href="#" class="stretched-link"></a>
-              </Card.Body>
-            </Card>
+            <PartnerCard partnertype="DIN" number="3" image={dinPartnerImage} />
             </Col>
             <Col md={6} lg={3} className="p-4">
-            <Card className="partner-card" style={{ width: 'auto' }}>
-              <Card.Img variant="top" src="https://www.neurocat.ai/wp-content/uploads/2018/05/admin-ajax.jpg" />
-              <Card.Body>
-                <Card.Title>Partner 4</Card.Title>
-                <Card.Text>
-                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, soluta.
-                </Card.Text>
-                <a href="#" class="stretched-link"></a>
-              </Card.Body>
-            </Card>
+            <PartnerCard partnertype="DIN" number="4" image={dinPartnerImage} />
             </Col>
           </Row> 
           </div>
