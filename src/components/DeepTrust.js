@@ -2,9 +2,13 @@ import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import Logo from "../images/neurocat_website_logo.png";
 import { Navbar, Nav, Container, Row, Col, Card, Button } from "react-bootstrap";
-import {NavHashLink} from "react-router-hash-link"
+import {NavHashLink} from "react-router-hash-link";
+import PartnerCard from './PartnerCard';
 
 const DeepTrust = () => {
+
+ const dtPartnerImage="https://images.unsplash.com/photo-1482747029550-096ad6aa9caf?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGZsb3dpbmclMjBpbmZvZ3JhcGhpY3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60";
+
   return (
     <div>
       <Navbar expand="md" bg="light" fixed="top" className="navbar py-3 " variant="light">
@@ -99,52 +103,16 @@ const DeepTrust = () => {
           <h1 className="display-5">Our Partners</h1>
           <Row className="justify-content-around">
             <Col md={6} lg={3} className="p-4 ">
-            <Card className="partner-card" style={{ width: 'auto' }}>
-              <Card.Img variant="top" src="https://images.unsplash.com/photo-1482747029550-096ad6aa9caf?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGZsb3dpbmclMjBpbmZvZ3JhcGhpY3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" />
-              <Card.Body>
-                <Card.Title>Partner 1</Card.Title>
-                <Card.Text>
-                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, soluta.
-                </Card.Text>
-                <a href="#" className="stretched-link"></a>
-              </Card.Body>
-            </Card>
+              <PartnerCard partnertype="" number="1" image={dtPartnerImage} />
             </Col>
             <Col md={6} lg={3} className="p-4">
-            <Card className="partner-card" style={{ width: 'auto' }}>
-              <Card.Img variant="top" src="https://images.unsplash.com/photo-1482747029550-096ad6aa9caf?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGZsb3dpbmclMjBpbmZvZ3JhcGhpY3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" />
-              <Card.Body>
-                <Card.Title>Partner 2</Card.Title>
-                <Card.Text>
-                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, soluta.
-                </Card.Text>
-                <a href="#" className="stretched-link"></a>
-              </Card.Body>
-            </Card>
+             <PartnerCard partnertype="" number="5" image={dtPartnerImage}/>
             </Col>
             <Col md={6} lg={3} className="p-4">
-            <Card className="partner-card" style={{ width: 'auto' }}>
-              <Card.Img variant="top" src="https://images.unsplash.com/photo-1482747029550-096ad6aa9caf?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGZsb3dpbmclMjBpbmZvZ3JhcGhpY3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" />
-              <Card.Body>
-                <Card.Title>Partner 3</Card.Title>
-                <Card.Text>
-                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, soluta.
-                </Card.Text>
-                <a href="#" className="stretched-link"></a>
-              </Card.Body>
-            </Card>
+              <PartnerCard partnertype="" number="3" image={dtPartnerImage}/>
             </Col>
             <Col md={6} lg={3} className="p-4">
-            <Card className="partner-card" style={{ width: 'auto' }}>
-              <Card.Img variant="top" src="https://images.unsplash.com/photo-1482747029550-096ad6aa9caf?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGZsb3dpbmclMjBpbmZvZ3JhcGhpY3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" />
-              <Card.Body>
-                <Card.Title>Partner 4</Card.Title>
-                <Card.Text>
-                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, soluta.
-                </Card.Text>
-                <a href="#" className="stretched-link"></a>
-              </Card.Body>
-            </Card>
+              <PartnerCard partnertype="" number="20"image={dtPartnerImage} />
             </Col>
           </Row> 
           <Row className="justify-content-end text-end px-4">

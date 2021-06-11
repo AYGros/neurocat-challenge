@@ -77,11 +77,9 @@ const Resources = ({scrollWithOffset}) => {
             <div className="use-cases-container container text-center">
               <h1  className="pb-2 display-5">Use Cases</h1>
                 <Row className="justify-content-center">
-                  {console.log("hello")}
                   <OwlCarousel  className="owl-theme" {...options}>
                       {
                       useCases.cases.map( (cases) => {
-  
                         return (
                           <Fragment key={cases.id}>
                             <SlideCard cases={cases}/>
@@ -93,10 +91,9 @@ const Resources = ({scrollWithOffset}) => {
             </div>
           </section>
           <section id="publications">
-            <div className="info container">
+            <div className="publications-container container text-center">
             <h1  className="pb-2 display-5">Own Publications</h1>
                 <Row className="justify-content-center">
-                  {console.log("hello")}
                   <OwlCarousel  className="owl-theme" {...options}>
                       {
                       ownPublications.cases.map( (cases) => {
@@ -111,14 +108,14 @@ const Resources = ({scrollWithOffset}) => {
 
             </div>
           </section>
-          <section id="paper-cuts">
-            <div className="info container">
-            <h1 className="display-1">you are in the paper-cuts section</h1>
+          <section id="paper-cats">
+            <div className="cats-container container text-center">
+            <h1 className="display-5">you are in the paper-cuts section</h1>
             </div>
           </section>
           <section id="news">
-            <div className="info container">
-            <h1 className="display-1">you are in the news section</h1>
+            <div className="news-container container text-center">
+            <h1 className="display-5">you are in the news section</h1>
             </div>
           </section>
       </div>
