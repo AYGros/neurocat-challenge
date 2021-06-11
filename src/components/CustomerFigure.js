@@ -14,7 +14,7 @@ const CustomerFigure = (customer) => {
         <Figure.Caption>
          {customer.customer.name}
         </Figure.Caption>
-        <a href={customer.customer.webpage} class="stretched-link"></a>
+        <a href={customer.customer.webpage} className="stretched-link"></a>
       </Figure>
     </div>
   )

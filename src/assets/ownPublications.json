@@ -1,0 +1,34 @@
+{
+  "cases": [
+    {
+      "id": "1",
+      "name": "Publication 1",
+      "image": "https://www.neurocat.ai/wp-content/uploads/2018/05/admin-ajax-151x120.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Publication 2",
+      "image": "https://www.neurocat.ai/wp-content/uploads/2018/04/810px-Flag_of_Europe.svg_-230x120.png"
+    },
+    {
+      "id": "3",
+      "name": "Publication 2",
+      "image": "https://www.neurocat.ai/wp-content/uploads/2020/02/Decision-Boundary-1-230x120.png"
+    },
+    {
+      "id": "4",
+      "name": "Publication 4",
+      "image": "https://www.neurocat.ai/wp-content/uploads/2018/11/image_preview-230x120.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Publication 5",
+      "image": "https://www.neurocat.ai/wp-content/uploads/2020/11/speedometer-with-low-medium-high-risk-concept-vector-32318792-1-230x120.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Publication 6",
+      "image": "https://www.neurocat.ai/wp-content/uploads/2018/05/1500-230x120.jpg"
+    }
+  ]
+}

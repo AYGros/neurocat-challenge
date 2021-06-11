@@ -73,9 +73,9 @@ const Home = ({scrollWithOffset}) => {
                 </Col>
                 <Col lg={8} className="p-3">
                   <h4 >Our Vision</h4>
-                  <blockquote class="blockquote text-left">
+                  <blockquote className="blockquote text-left">
                    <p>„We are drowning in information but starved for knowledge“ </p>
-                    <footer class="blockquote-footer">
+                    <footer className="blockquote-footer">
                       <cite title="Source Title">John Naisbitt</cite>
                     </footer>
                   </blockquote>

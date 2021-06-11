@@ -97,7 +97,7 @@ const Aidkit = ({scrollWithOffset}) => {
             <Col md={4}>
               <Row className="align-items-center justify-content-center">
                 <Col xs="auto">
-                <i class="far fa-check-circle"></i>
+                <i className="far fa-check-circle"></i>
                 </Col>
                 <Col >
                 <h4>Robustness</h4>
@@ -107,7 +107,7 @@ const Aidkit = ({scrollWithOffset}) => {
             <Col md={4}>
             <Row className="align-items-center justify-content-center">
                 <Col xs="auto">
-                <i class="far fa-check-circle"></i>
+                <i className="far fa-check-circle"></i>
                 </Col>
                 <Col>
                 <h4>Explainability</h4>
@@ -117,7 +117,7 @@ const Aidkit = ({scrollWithOffset}) => {
             <Col md={4}>
             <Row className="align-items-center justify-content-center">
                 <Col xs="auto">
-                <i class="far fa-check-circle"></i>
+                <i className="far fa-check-circle"></i>
                 </Col>
                 <Col >
                 <h4>Functionality</h4>
