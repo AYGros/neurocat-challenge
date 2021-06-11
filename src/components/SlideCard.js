@@ -7,8 +7,8 @@ const slideCard = (cases) => {
   console.log(cases);
   return (
     <div>
-      <Card style={{ width: '14rem' }}>
-        <Card.Img variant="top" src={cases.cases.image} />
+      <Card style={{ width: '16rem', height: '22rem', boxShadow:"0 0 1rem 0.2rem lightgrey" }}>
+        <Card.Img variant="top" src={cases.cases.image} style={{height: '8rem', objectFit: 'cover'}}/>
         <Card.Body>
           <Card.Title>{cases.cases.name}</Card.Title>
           <Card.Text>

@@ -5,6 +5,8 @@ import { Navbar, Nav, Container, Row } from "react-bootstrap";
 import {NavHashLink} from "react-router-hash-link";
 import useCases from "../assets/useCases.json";
 import ownPublications from "../assets/ownPublications.json";
+import paperCats from "../assets/paperCats.json";
+import news from "../assets/news.json";
 import SlideCard from './SlideCard';
 
 
@@ -73,6 +75,7 @@ const Resources = ({scrollWithOffset}) => {
           </Container>
       </Navbar>
       <div className="main-container">
+        {/* -------------use cases section------------------------------- */}
           <section id="use-cases">
             <div className="use-cases-container container text-center">
               <h1  className="pb-2 display-5">Use Cases</h1>
@@ -88,10 +91,14 @@ const Resources = ({scrollWithOffset}) => {
                       })}
                  </OwlCarousel>
                </Row> 
+               
             </div>
           </section>
+          <div className="section-divider container"></div>
+          {/* ----------------publications section-------------------- */}
           <section id="publications">
             <div className="publications-container container text-center">
+            
             <h1  className="pb-2 display-5">Own Publications</h1>
                 <Row className="justify-content-center">
                   <OwlCarousel  className="owl-theme" {...options}>
@@ -108,14 +115,42 @@ const Resources = ({scrollWithOffset}) => {
 
             </div>
           </section>
+          <div className="section-divider container"></div>
+          {/* ------------------------paper-cats section--------------------------- */}
           <section id="paper-cats">
             <div className="cats-container container text-center">
-            <h1 className="display-5">you are in the paper-cuts section</h1>
+            <h1 className="display-5">Paper Cats</h1>
+              <Row className="justify-content-center">
+                  <OwlCarousel  className="owl-theme" {...options}>
+                      {
+                      paperCats.cases.map( (cases) => {
+                        return (
+                          <Fragment key={cases.id}>
+                            <SlideCard cases={cases}/>
+                          </Fragment>
+                        )
+                      })}
+                 </OwlCarousel>
+               </Row> 
             </div>
           </section>
+          <div className="section-divider container"></div>
+          {/* ----------------------news section------------------------------ */}
           <section id="news">
             <div className="news-container container text-center">
-            <h1 className="display-5">you are in the news section</h1>
+            <h1 className="display-5">News</h1>
+              <Row className="justify-content-center">
+                  <OwlCarousel  className="owl-theme" {...options}>
+                      {
+                      news.cases.map( (cases) => {
+                        return (
+                          <Fragment key={cases.id}>
+                            <SlideCard cases={cases}/>
+                          </Fragment>
+                        )
+                      })}
+                 </OwlCarousel>
+               </Row> 
             </div>
           </section>
       </div>
