@@ -1,0 +1,22 @@
+
+  .owl-nav {
+    .fas {
+      font-size: 3rem;
+      color: theme-color("secondary");
+    }
+    .owl-prev {
+      position: absolute;
+      left: 0;
+      top: 60px;
+    }
+
+    .owl-next {
+      position: absolute;
+      right: 0;
+      top: 60px;
+    }
+  }
+.owl-stage-outer{
+  padding-left: 5rem;
+ 
+}

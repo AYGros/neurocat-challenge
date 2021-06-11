@@ -106,7 +106,7 @@ const DeepTrust = () => {
                 <Card.Text>
                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, soluta.
                 </Card.Text>
-                <a href="#" class="stretched-link"></a>
+                <a href="#" className="stretched-link"></a>
               </Card.Body>
             </Card>
             </Col>
@@ -118,7 +118,7 @@ const DeepTrust = () => {
                 <Card.Text>
                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, soluta.
                 </Card.Text>
-                <a href="#" class="stretched-link"></a>
+                <a href="#" className="stretched-link"></a>
               </Card.Body>
             </Card>
             </Col>
@@ -130,7 +130,7 @@ const DeepTrust = () => {
                 <Card.Text>
                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, soluta.
                 </Card.Text>
-                <a href="#" class="stretched-link"></a>
+                <a href="#" className="stretched-link"></a>
               </Card.Body>
             </Card>
             </Col>
@@ -142,7 +142,7 @@ const DeepTrust = () => {
                 <Card.Text>
                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, soluta.
                 </Card.Text>
-                <a href="#" class="stretched-link"></a>
+                <a href="#" className="stretched-link"></a>
               </Card.Body>
             </Card>
             </Col>
