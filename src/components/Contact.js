@@ -66,7 +66,7 @@ const handleSubmit = (e) => {
       </Navbar>
       {/* -----------------Form section-------------------------------- */}
       <div className="main-container">
-        <div className="background-banner "></div>
+        <div className="form-background">
           <div className="contact-form container justify-content-center">
             <Card className="text-left contact-card">
               <Card.Body>
@@ -212,7 +212,7 @@ const handleSubmit = (e) => {
             </Card>
             
           </div>
-        
+        </div>
       </div>
     </div>
   )
