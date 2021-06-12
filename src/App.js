@@ -1,4 +1,4 @@
-import { Route, Switch } from "react-router";
+import { Route, Switch, Redirect } from "react-router-dom";
 import Aidkit from "./components/Aidkit";
 import Construction from "./components/Construction";
 import Contact from "./components/Contact";
@@ -7,6 +7,7 @@ import DINStandards from "./components/DINStandards";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Main from "./components/Main";
+import PageNotFound from "./components/PageNotFound";
 import Resources from "./components/Resources";
 import Services from "./components/Services";
 
@@ -52,6 +53,8 @@ function App() {
            <Construction 
            scrollWithOffset={scrollWithOffset}/>
          </Route>
+         <Route path="/pagenotfound" component={PageNotFound} />
+         <Redirect to="/pagenotfound" />
        </Switch>
        <Footer/>
      </Main>
