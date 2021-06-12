@@ -1,16 +1,14 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import Logo from "../images/neurocat_website_logo.png";
-import { Navbar, Nav, Container, Row, Col, Image } from "react-bootstrap";
+import { Navbar, Nav, Container, Row, Col, Image, Button } from "react-bootstrap";
 import {NavHashLink} from "react-router-hash-link";
+import TeamModal from './TeamModal';
 
 const Home = ({scrollWithOffset}) => {
 
-//   const scrollWithOffset = (el) => {
-//     const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
-//     const yOffset = -80; 
-//     window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' }); 
-// }
+const [modalShow, setModalShow]=useState(false);  
+
   return (
     <div >
       <Navbar expand="md" bg="light" fixed="top" className="navbar py-3 " variant="light">
@@ -55,9 +53,9 @@ const Home = ({scrollWithOffset}) => {
         <section id="statements">
           <div className="statements-container container py-4 text-left">
           <Row className="justify-content-around">
-            <Col md={5} className="d-flex justify-content-center">
+            <Col md={6} className="d-flex justify-content-center">
               <Row className="justify-content-start">
-                <Col Logo={4} className="py-3">
+                <Col lg={4} className="py-3">
                   <Image className="statementImage" src="https://www.neurocat.ai/wp-content/uploads/2018/05/about.jpg" fluid rounded></Image>
                 </Col>
                 <Col lg={8} className="p-3">
@@ -66,7 +64,7 @@ const Home = ({scrollWithOffset}) => {
                 </Col>
               </Row>
             </Col>
-            <Col md={5}>
+            <Col md={6}>
             <Row className="justify-content-start">
                 <Col lg={4} className="py-3" >
                   <Image className="statementImage" src="https://images.unsplash.com/photo-1533497197926-c9e810dcea9a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjV8fGFpfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" fluid rounded style={{objectFit: 'cover'}}></Image>
@@ -221,7 +219,11 @@ const Home = ({scrollWithOffset}) => {
         <section id="team">
           <div className="team-container container text-center">
           <div className="row justify-content-center py-2">
-            <h1 className="display-5">Our Team</h1>
+            <Button className="btn btn-primary btn-lg text-light" onClick={() => setModalShow(true)} >Our Team</Button>
+            <TeamModal
+              show={modalShow}
+              onHide={() => setModalShow(false)}
+            />
             </div>
           <img src="https://www.neurocat.ai/wp-content/uploads/2018/05/our-team.jpg" alt="team picture" />
           </div>
