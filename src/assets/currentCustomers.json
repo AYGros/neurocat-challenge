@@ -4,7 +4,7 @@
       "name":"customer 1",
       "icon":"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Volkswagen_Group.svg/220px-Volkswagen_Group.svg.png",
       "location": "location 1",
-      "quote": "Customer 1 approves of neurocat aidkit",
+      "quote": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde vero placeat corrupti itaque tempora unde fugiat perferendis suscipit odit culpa qui, libero pariatur. Vel facilis reprehenderit debitis sunt quas.",
       "id": "1",
       "webpage":"https://en.wikipedia.org/wiki/Volkswagen_Group"
     },
@@ -12,7 +12,7 @@
       "name":"customer 2",
       "icon":"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Volkswagen_Group.svg/220px-Volkswagen_Group.svg.png",
       "location": "location 2",
-      "quote": "Customer 2 recommends neurocat aidkit",
+      "quote": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde vero placeat quae perferendis corporis, sapiente ratione. Corrupti, explicabo ipsam eos deserunt pariatur. Vel facilis reprehenderit debitis sunt quas.",
       "id": "2",
       "webpage":"https://en.wikipedia.org/wiki/Volkswagen_Group"
     },
@@ -20,7 +20,7 @@
       "name":"customer 3",
       "icon":"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Volkswagen_Group.svg/220px-Volkswagen_Group.svg.png",
       "location": "location 3",
-      "quote": "Customer 3 approves of neurocat aidkit",
+      "quote": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde vero placeat quae perferendis corporis, sapiente ratione. Corrupti, explicabo ipsam eos deserunt  pariatur. Vel facilis reprehenderit debitis sunt quas.",
       "id": "2",
       "webpage":"https://en.wikipedia.org/wiki/Volkswagen_Group"
     }

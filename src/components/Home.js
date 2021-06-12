@@ -1,9 +1,10 @@
-import React, {useState} from 'react';
+import React, {Fragment, useState} from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import Logo from "../images/neurocat_website_logo.png";
-import { Navbar, Nav, Container, Row, Col, Image, Button } from "react-bootstrap";
+import { Navbar, Nav, Container, Row, Col, Image, Button, Carousel } from "react-bootstrap";
 import {NavHashLink} from "react-router-hash-link";
 import TeamModal from './TeamModal';
+import currentCustomers from '../assets/currentCustomers.json'
 
 const Home = ({scrollWithOffset}) => {
 
@@ -206,14 +207,26 @@ const [modalShow, setModalShow]=useState(false);
         {/* --------------------customer voice section----------------------------- */}
         <section id="customer-voice" className="py-4">
           <div className="voices-container container text-center py-4">
-            <h4 className="display-5">This is what our costumers say</h4>
-            <blockquote class="blockquote text-center">
-                   <h1 className="display-4">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod harum fuga ipsam unde libero ratione quisquam sit vero. Eveniet, corrupti! "</h1>
-                    <footer class="blockquote-footer">
-                      <h6 title="Source Title">Customer Name</h6>
-                    </footer>
-                  </blockquote>
-          </div>
+            <h4 className="display-5">This is what our customers say</h4>
+            <Carousel>
+              {
+                currentCustomers.customers.map(
+                  (customer => {
+                    return (
+                      <Carousel.Item>
+                      <div className="quoteContainer" >
+                        </div>
+                        <Carousel.Caption>
+                          <h3>"{customer.quote}"</h3>
+                          <h4>{customer.name}</h4>
+                        </Carousel.Caption>
+                      </Carousel.Item>
+                    )                   
+                  })
+                )
+              }
+             </Carousel>
+            </div>
         </section>
         {/* -------------------------team section------------------------------------- */}
         <section id="team">

@@ -111,6 +111,14 @@ max-height: 100vh;
 .voices-container {
   background-color: rgba(246, 251, 252, 0.6) ;
   border-radius: 5px;
+
+  .quoteContainer {
+    min-height: 18rem;
+    background: rgba(59, 174, 194, 0.5);
+    align-items: center;
+
+  }
+
 }
 h4 {
   color: theme-color("primary");
