@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import { Link, NavLink, useHistory } from 'react-router-dom';
 import Logo from "../images/neurocat_website_logo.png";
 import { Navbar, Nav, Container, Card, Form, Button } from "react-bootstrap";
+import Select from 'react-select';
 
 const Contact = () => {
 const history= useHistory();
@@ -9,8 +10,8 @@ const [clientInfo, setClientInfo]=useState({
   
 });
 
-const [formDemandsInfo, setFormDemandsInfo] = useState(false);
-const [formComplete, setFormComplete]= useState(false);
+// const [formDemandsInfo, setFormDemandsInfo] = useState(false);
+// const [formComplete, setFormComplete]= useState(false);
 
 
 
@@ -28,9 +29,18 @@ const handleChangeForm=(e)=>{
       
  }
 
+const methods = [
+  {value:"method1",
+  label: "method1"},
+  {value:"method2",
+  label: "method2"},
+  {value:"method3",
+  label: "method3"}
+]
 
-
-
+const handleMethods = (e) => {
+  setClientInfo((prevState) => ({ ...prevState, method: e }));
+};
 
 const handleSubmit = (e) => {
   e.preventDefault();
@@ -39,7 +49,7 @@ const handleSubmit = (e) => {
 //     setFormDemandsInfo(true);
 // } else {
 //     setFormDemandsInfo(false);
-    // history.push("/")
+     history.push("/")
 //}
 
 }
@@ -129,6 +139,7 @@ const handleSubmit = (e) => {
                 </Form.Group>
                 <Form.Group controlId="interest">
                   <Form.Label>You are interested in:</Form.Label>
+                  
                   <Form.Control
                    as="select" 
                    name="interest" 
@@ -149,35 +160,14 @@ const handleSubmit = (e) => {
                    <div>
                     <Form.Group controlId="modeltesting-method">
                         <Form.Label>How are you currently testing your models?</Form.Label>
-                        <div key="inline-checkbox">
-                        <Form.Check 
-                        inline label="method1" 
-                        name="testMethod" 
-                        type="checkbox" 
-                        id="checkbox-1" 
-                        value="testMethod1"
-                        checked={clientInfo.testMethod === "testMethod1"}
-                        onChange={handleChangeForm}
-                        />
-                        <Form.Check 
-                        inline label="method2" 
-                        name="testMethod" 
-                        type="checkbox" 
-                        id="checkbox-2" 
-                        value="testMethod2"
-                        checked={clientInfo.testMethod === "testMethod2"}
-                        onChange={handleChangeForm}
-                        />
-                        <Form.Check 
-                        inline label="method3" 
-                        name="testMethod" 
-                        type="checkbox" 
-                        id="checkbox-3" 
-                        value="testMethod3"
-                        checked={clientInfo.testMethod === "testMethod3"}
-                        onChange={handleChangeForm}
-                        />
-                        </div>
+                        <Select options={methods}
+                          onChange={handleMethods}
+                          placeholder="select method"
+                          isMulti
+                          id="method"
+                          name="method"
+                          type="method"
+                          />
                     </Form.Group>
                     <Form.Group controlId="modeltesting-frequency">
                     <Form.Label>How often do you test your models?</Form.Label>
@@ -215,9 +205,9 @@ const handleSubmit = (e) => {
                   )}
               <Button type="submit">Submit Form</Button>
               </Form>
-              {formDemandsInfo && (
+              {/* {formDemandsInfo && (
                 <h1> please complete form before submitting</h1>
-              )}
+              )} */}
               </Card.Body>
             </Card>
             
