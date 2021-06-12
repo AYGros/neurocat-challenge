@@ -9,7 +9,7 @@ const history= useHistory();
 const [clientInfo, setClientInfo]=useState({
   
 });
-
+const [validated,setValidated]=useState(false);
 // const [formDemandsInfo, setFormDemandsInfo] = useState(false);
 // const [formComplete, setFormComplete]= useState(false);
 
@@ -42,17 +42,17 @@ const handleMethods = (e) => {
   setClientInfo((prevState) => ({ ...prevState, method: e }));
 };
 
-const handleSubmit = (e) => {
-  e.preventDefault();
- console.log(clientInfo);
-//   if (!clientInfo.firstName || !clientInfo.lastName || !clientInfo.email || !clientInfo.role || !clientInfo.interest) {
-//     setFormDemandsInfo(true);
-// } else {
-//     setFormDemandsInfo(false);
-     history.push("/")
-//}
 
-}
+const handleSubmit = (event) => {
+  const form = event.currentTarget;
+  if (form.checkValidity() === false) {
+    event.preventDefault();
+    event.stopPropagation();
+  }
+  setValidated(true);
+
+};
+
 
   return (
     <div>
@@ -71,7 +71,7 @@ const handleSubmit = (e) => {
             <Card className="text-left contact-card">
               <Card.Body>
               <Card.Title>Contact us for more information</Card.Title>
-              <Form onSubmit={handleSubmit}>
+              <Form noValidate validated={validated} onSubmit={handleSubmit}>
                 <Form.Group controlId="firstName">
                   <Form.Label>First Name</Form.Label>
                   <Form.Control 
@@ -205,9 +205,6 @@ const handleSubmit = (e) => {
                   )}
               <Button type="submit">Submit Form</Button>
               </Form>
-              {/* {formDemandsInfo && (
-                <h1> please complete form before submitting</h1>
-              )} */}
               </Card.Body>
             </Card>
             
