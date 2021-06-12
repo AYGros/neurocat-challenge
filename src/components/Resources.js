@@ -65,7 +65,7 @@ const Resources = ({scrollWithOffset}) => {
                   <NavHashLink  smooth to="/resources/#publications" className="link" scroll={el => scrollWithOffset(el)}>Publications</NavHashLink>
                 </Nav.Link>
                 <Nav.Link >
-                  <NavHashLink smooth to="/resources/#paper-cuts" scroll={el => scrollWithOffset(el)}className="link">PaperCats</NavHashLink>
+                  <NavHashLink smooth to="/resources/#paper-cats" scroll={el => scrollWithOffset(el)}className="link">PaperCats</NavHashLink>
                 </Nav.Link>
                 <Nav.Link>
                   <NavHashLink smooth to="/resources/#news" scroll={el => scrollWithOffset(el)}className="link">News</NavHashLink>

@@ -3,8 +3,7 @@ import { Link, NavLink } from 'react-router-dom';
 import Logo from "../images/neurocat_website_logo.png";
 import { Navbar, Nav, Container } from "react-bootstrap";
 
-
-const Construction = () => {
+const PageNotFound = () => {
   return (
     <div>
       
@@ -19,13 +18,17 @@ const Construction = () => {
       <div className="main-container">
         <section id="construction-message">
           <div className="info container">
-          <h1 className="display-1">Sorry, this page is currently under construction</h1>
+            <h1 className="display-1" style={{
+              color:"tomato"
+            }}>ERROR</h1>
+          <h1 className="display-1">Sorry, what you are looking for does not seem to exist</h1>
           </div>
           
         </section>
       </div>
+
     </div>
   )
 }
 
-export default Construction
+export default PageNotFound
