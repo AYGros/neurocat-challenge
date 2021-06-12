@@ -4,5 +4,14 @@
   height: 600px;
   background: url(https://www.neurocat.ai/wp-content/uploads/2018/11/neurocat_website_header_bg_video_2.jpg);
   background-size: cover;
+  
+  z-index: 1;
+  
+  
 }
 
+.contact-form {
+  
+  z-index:2;
+
+}
