@@ -9,6 +9,8 @@ import {NavHashLink} from "react-router-hash-link";
 import currentCustomers from "../assets/currentCustomers.json";
 import CustomerFigure from "./CustomerFigure";
 import VideoEmbed from "./VideoEmbed";
+import FAQCard from './FAQCard';
+import faqs from "../assets/faqs.json"
 
 const Aidkit = ({scrollWithOffset}) => {
   return (
@@ -243,59 +245,20 @@ const Aidkit = ({scrollWithOffset}) => {
             <Row className="justify-content-center">
               <h1 className="display-5"> FAQ </h1>
             </Row>
-            <Accordion className="accordion" defaultActiveKey="0">
-              <Card>
-                <Accordion.Toggle className="toggle" as={Card.Header} eventKey="0">
-                  <h4>Question 1</h4>
-                </Accordion.Toggle>
-                <Accordion.Collapse eventKey="0">
-                  <Card.Body>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident iusto quaerat facere consequatur beatae eos reiciendis maxime necessitatibus, id est.</p>
-                  </Card.Body>
-                </Accordion.Collapse>
-              </Card>
-              <Card>
-                <Accordion.Toggle className="toggle" as={Card.Header} eventKey="1">
-                  <h4>Question 2</h4>
-                </Accordion.Toggle>
-                <Accordion.Collapse eventKey="1">
-                  <Card.Body>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At iusto voluptates mollitia? Natus praesentium perspiciatis voluptates consequatur dolores reiciendis? Voluptates?</p>
-                  </Card.Body>
-                </Accordion.Collapse>
-              </Card>
-              <Card>
-                <Accordion.Toggle className="toggle" as={Card.Header} eventKey="2">
-                  <h4>Question 3</h4>
-                </Accordion.Toggle>
-                <Accordion.Collapse eventKey="2">
-                  <Card.Body>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At iusto voluptates mollitia? Natus praesentium perspiciatis voluptates consequatur dolores reiciendis? Voluptates?</p>
-                  </Card.Body>
-                </Accordion.Collapse>
-              </Card>
-              <Card>
-                <Accordion.Toggle className="toggle" as={Card.Header} eventKey="3">
-                  <h4>Question 4</h4>
-                </Accordion.Toggle>
-                <Accordion.Collapse eventKey="3">
-                  <Card.Body>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At iusto voluptates mollitia? Natus praesentium perspiciatis voluptates consequatur dolores reiciendis? Voluptates?</p>
-                  </Card.Body>
-                </Accordion.Collapse>
-              </Card>
-              <Card>
-                <Accordion.Toggle className="toggle" as={Card.Header} eventKey="4">
-                  <h4>Question 5</h4>
-                </Accordion.Toggle>
-                <Accordion.Collapse eventKey="4">
-                  <Card.Body>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At iusto voluptates mollitia? Natus praesentium perspiciatis voluptates consequatur dolores reiciendis? Voluptates?</p>
-                  </Card.Body>
-                </Accordion.Collapse>
-              </Card>
+            <Accordion className="accordion" >
+              {
+                faqs.questions.map(
+                  (questions => {
+                    return (
+                      <Fragment>
+                        <FAQCard questions={questions}/>
+                      </Fragment>
+                    )
+                  })
+                )
+              }
             </Accordion>
-          
+         
           </div>
         </section>
         
