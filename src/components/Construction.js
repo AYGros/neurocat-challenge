@@ -18,10 +18,11 @@ const Construction = () => {
       
       <div className="main-container">
         <section id="construction-message">
+          <div className="simple-background ">
           <div className="info container">
           <h1 className="display-1">Sorry, this page is currently under construction</h1>
           </div>
-          
+          </div>
         </section>
       </div>
     </div>

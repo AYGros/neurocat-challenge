@@ -17,13 +17,14 @@ const PageNotFound = () => {
       
       <div className="main-container">
         <section id="construction-message">
+          <div className="simple-background">
           <div className="info container">
             <h1 className="display-1" style={{
               color:"tomato"
-            }}>ERROR</h1>
+            }}>404 ERROR</h1>
           <h1 className="display-1">Sorry, what you are looking for does not seem to exist</h1>
           </div>
-          
+          </div>
         </section>
       </div>
 
