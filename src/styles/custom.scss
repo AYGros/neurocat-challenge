@@ -28,3 +28,18 @@ $theme-colors : (
   background-color: rgba(246, 251, 252, 0.6);
   color: theme-color("primary");
 }
+
+.simple-background {
+  background: url("https://www.neurocat.ai/wp-content/uploads/2018/11/cat.png");
+  background-repeat: repeat;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+ 
+}
+
+.info {
+  background: rgba(246, 251, 252, 0.9);
+  box-shadow: 0 0 1rem 0.3rem lightgrey;
+
+}
