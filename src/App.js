@@ -26,34 +26,34 @@ function App() {
          <Route exact path="/">
           <Home scrollWithOffset={scrollWithOffset}/>
          </Route>
-         <Route  path="/aidkit">
+         <Route  exact path="/aidkit">
            <Aidkit 
            scrollWithOffset={scrollWithOffset} />
          </Route>
-         <Route path="/contact">
+         <Route exact path="/contact">
            <Contact 
            scrollWithOffset={scrollWithOffset}/>
          </Route>
-         <Route path="/deeptrust">
+         <Route exact path="/deeptrust">
            <DeepTrust 
            scrollWithOffset={scrollWithOffset}/>
          </Route>
-         <Route path="/DINstandards">
+         <Route exact path="/DINstandards">
            <DINStandards />
          </Route>
-         <Route path="/resources">
+         <Route exact path="/resources">
            <Resources 
            scrollWithOffset={scrollWithOffset}/>
          </Route>
-         <Route path="/services">
+         <Route exact path="/services">
            <Services 
            scrollWithOffset={scrollWithOffset}/>
          </Route>
-         <Route path="/construction">
+         <Route exact path="/construction">
            <Construction 
            scrollWithOffset={scrollWithOffset}/>
          </Route>
-         <Route path="/pagenotfound" component={PageNotFound} />
+         <Route exact path="/pagenotfound" component={PageNotFound} />
          <Redirect to="/pagenotfound" />
        </Switch>
        <Footer/>
