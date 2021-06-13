@@ -7,5 +7,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 additional npm packages: react-owl-carousel, react-select
 
-images from neurocat.ai, unsplash, shutterstock
+Images from neurocat.ai, unsplash, shutterstock
+
+Text content from neurocat.ai
 
