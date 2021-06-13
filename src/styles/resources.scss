@@ -15,6 +15,13 @@
       right: 0;
       top: 60px;
     }
+
+    .owl-next:hover, .owl-prev:hover {
+      background: none !important;
+      .fas {
+        color: theme-color("info");
+      }
+    }
   }
 .owl-stage-outer{
   padding-left: 3rem;
