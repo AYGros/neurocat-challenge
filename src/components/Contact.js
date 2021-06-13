@@ -1,18 +1,22 @@
 import React, {useState} from 'react'
 import { Link, NavLink, useHistory } from 'react-router-dom';
 import Logo from "../images/neurocat_website_logo.png";
-import { Navbar, Nav, Container, Card, Form, Button } from "react-bootstrap";
+import { Navbar, Nav, Container, Card, Form, Button, Modal } from "react-bootstrap";
 import Select from 'react-select';
 
 const Contact = () => {
 const history= useHistory();
-const [clientInfo, setClientInfo]=useState({
-  
-});
+const [clientInfo, setClientInfo]=useState({});
 const [validated,setValidated]=useState(false);
-// const [formDemandsInfo, setFormDemandsInfo] = useState(false);
-// const [formComplete, setFormComplete]= useState(false);
+// const [showSubmitModal, setShowSubmitModal] = useState(false);
 
+// const handleCloseSubmitMessage = () => {
+//   setShowSubmitModal(false);
+//   history.push('/');
+// }
+
+
+// const handleShowSubmitMessage = () => setShowSubmitModal(true);
 
 
 const handleChangeForm=(e)=>{
@@ -23,7 +27,6 @@ const handleChangeForm=(e)=>{
         ...prevState, [e.target.name]: e.target.value
       }            
     }
-
   )
   
       
@@ -49,8 +52,14 @@ const handleSubmit = (event) => {
     event.preventDefault();
     event.stopPropagation();
   }
-  setValidated(true);
-
+   
+    setValidated(true);
+    
+  if (form.checkValidity()===true) {
+    alert('Thank you for contacting us!\nClosing this alert will redirect you to our homepage')
+    history.push('/');
+  }
+  
 };
 
 
@@ -109,7 +118,7 @@ const handleSubmit = (event) => {
                   required
                   />
                   <Form.Text>required</Form.Text>
-                  <Form.Control.Feedback >please enter your last name</Form.Control.Feedback>
+                  <Form.Control.Feedback type="invalid">please enter your email</Form.Control.Feedback>
                   <Form.Text className="text-muted">
                     We'll never share your email with anyone else.
                 </Form.Text>
@@ -135,7 +144,7 @@ const handleSubmit = (event) => {
                   required
                   />
                   <Form.Text>required</Form.Text>
-                  <Form.Control.Feedback type="invalid">please enter your last name</Form.Control.Feedback>
+                  <Form.Control.Feedback type="invalid">please enter your current role</Form.Control.Feedback>
                 </Form.Group>
                 <Form.Group controlId="interest">
                   <Form.Label>You are interested in:</Form.Label>
@@ -154,7 +163,7 @@ const handleSubmit = (event) => {
                   <option value="Option4">Option 4</option>
                  </Form.Control>
                  <Form.Text>required</Form.Text>
-                  <Form.Control.Feedback type="invalid">please enter your last name</Form.Control.Feedback>
+                  <Form.Control.Feedback type="invalid">please tell us what you are interested in</Form.Control.Feedback>
                 </Form.Group>
                   {clientInfo.interest && (
                    <div>
@@ -204,7 +213,21 @@ const handleSubmit = (event) => {
                 </div>
                   )}
               <Button type="submit">Submit Form</Button>
+              {/* ------------submit message------------------
+              <Modal show={showSubmitModal} onHide={handleCloseSubmitMessage}>
+                <Modal.Header closeButton>
+                  <Modal.Title>Message received</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>Thank you for contacting us</Modal.Body>
+                <Modal.Footer>
+                  <Button variant="secondary" onClick={handleCloseSubmitMessage}>
+                    Close
+                  </Button>
+                </Modal.Footer>
+              </Modal> */}
+      {/* --------------submit message end------------------------ */}
               </Form>
+
               </Card.Body>
             </Card>
             
