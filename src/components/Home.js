@@ -158,7 +158,7 @@ const [modalShow, setModalShow]=useState(false);
                   <Image src="https://www.neurocat.ai/wp-content/uploads/2018/05/tick.png"></Image>  
                 </Col>
                 <Col className="py-3" xs={6} sm={12}>
-                  <p>Cpmptetitive Advantage</p>
+                  <p>Comptetitive Advantage</p>
                   </Col>
               </Row>
             </Col>
